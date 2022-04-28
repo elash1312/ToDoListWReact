@@ -7,12 +7,12 @@ import "../styles/index.css";
 
 //import your own components
 import App from "./component/app.jsx";
-import Footer from "./component/footer.jsx";
+import Task from "./component/task.jsx";
 
 //render your react application
 ReactDOM.render(
 	<div>
-		<App />, <Footer />
+		<App />, <Task />
 	</div>,
 	document.querySelector("#app")
 );

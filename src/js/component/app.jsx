@@ -12,7 +12,7 @@ const App = () => {
 	return (
 		<div className="container">
 			<div className="App">
-				<h1>Todo List</h1>
+				<h1>Todo's</h1>
 				<label>Task</label>
 				<input
 					type="text"
@@ -22,6 +22,10 @@ const App = () => {
 					}}
 				/>
 				<button onClick={addTask}>Add to list</button>
+
+				{taskList.map((task) => {
+					return <Task taskName={task.task} />;
+				})}
 			</div>
 		</div>
 	);
