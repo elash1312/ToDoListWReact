@@ -7,12 +7,12 @@ import "../styles/index.css";
 
 //import your own components
 import App from "./component/app.jsx";
-import Task from "./component/task.jsx";
+import Todoform from "./component/todoform";
 
 //render your react application
 ReactDOM.render(
 	<div>
-		<App />, <Task />
+		<App />, <Todoform />
 	</div>,
 	document.querySelector("#app")
 );
