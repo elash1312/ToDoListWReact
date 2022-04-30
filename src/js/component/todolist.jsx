@@ -27,7 +27,7 @@ const TodoList = () => {
 							className="x btn btn-warning btn-circle btn-lg text-center font-weight-bold"
 							onClick={() => {
 								const newList = todos.filter(
-									(item, j) => index !== j
+									(todo, j) => index !== j
 								);
 								setList(newList);
 								setTask("");
@@ -37,24 +37,6 @@ const TodoList = () => {
 					</li>
 				))}
 			</ul>
-			{/* <ul>
-				{list.map((todo, index) => {
-					return (
-						<li key={index}>
-							{item}{" "}
-							<button
-								onClick={() => {
-									const newList = todos.filter(
-										(todo, j) => index !== j
-									);
-									setList(newList);
-								}}>
-								X
-							</button>
-						</li>
-					);
-				})}
-			</ul> */}
 		</div>
 	);
 };
