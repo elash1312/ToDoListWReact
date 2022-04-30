@@ -7,7 +7,6 @@ import "../styles/index.css";
 
 //import your own components
 import App from "./component/app.jsx";
-import Todoform from "./component/todoform.jsx";
 
 //render your react application
 ReactDOM.render(
