@@ -13,9 +13,9 @@ const TodoList = () => {
 					if (ev.key === "Enter") {
 						setTodos([...todos, task]);
 						setTask("");
-						const newList = [...todos, task];
-						setTask(newList);
-						setTask("");
+						// const newList = [...todos, task];
+						// setTask(newList);
+						// setTask("");
 					}
 				}}
 			/>
@@ -27,9 +27,9 @@ const TodoList = () => {
 							className="x btn btn-warning btn-circle btn-lg text-center font-weight-bold"
 							onClick={() => {
 								const newList = todos.filter(
-									(todo, j) => index !== j
+									(todo, j) => index != j
 								);
-								setList(newList);
+								setTodos(newList);
 								setTask("");
 							}}>
 							x
