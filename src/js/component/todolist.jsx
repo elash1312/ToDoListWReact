@@ -4,6 +4,11 @@ const TodoList = () => {
 	const [todos, setTodos] = React.useState([]);
 	const [task, setTask] = React.useState("");
 
+	const getTodos = () => {
+		fetch("https://assets.breatheco.de/apis/fake/todos/user/elash1312")
+		.then(response => response.json)
+		.then(data => { data.label })
+	}
 
 	return (
 		<div>
