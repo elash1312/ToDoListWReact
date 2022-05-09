@@ -18,12 +18,10 @@ const TodoList = () => {
 
 	const onKeyPress = (ev) => {
 		if (ev.key === "Enter") {
-			const setter = async () => {
-				setTodos([...todos, task]);
-			};
-			setter();
+			let newTodos = [...todos, task];
+			setTodos(newTodos);
 			setTask("");
-			updateFetch(todos);
+			updateFetch(newTodos);
 		}
 	};
 
